@@ -46,3 +46,25 @@ function isEven (number) {
 console.log(isEven(50));
 console.log(isEven(75));
 console.log(isEven(-1));
+
+// Chapter 3: Bean Counting
+function countChar (string, char) {
+  var charCount = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) === char) {
+      charCount++;
+    }
+  }
+  return charCount;
+}
+
+function countBs (string) {
+  /* var numberOfBs = 0;
+  for (var i = 0; i < string.length; i++) {
+    if (string.charAt(i) === "B") {
+      numberOfBs++;
+    }
+  }
+  return numberOfBs; */
+  return countChar (string, "B");
+}
